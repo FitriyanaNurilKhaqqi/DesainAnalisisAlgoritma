@@ -1,0 +1,195 @@
+TUGAS PERTEMUAN 1 [Algoritma & Pseucode]
+
+----------------------------------------
+Nama : Fitriyana Nuril Khaqqi
+NIM : 2022071003
+Prodi: Informatika
+----------------------------------------
+
+1. Cari nilai KPK dari 3 dan 4
+
+    - Algoritma:
+        1) Buat variabel a dengan nilai 3
+        2) Buat variabel b dengan nilai 4
+        3) Buat variabel A untuk nilai variabel a
+        4) Buat variabel B untuk nilai variabel b
+        5) Membuat perulangan dengan kondisi jika variabel a ketika di modulus dengan variabel B tidak sama dengan 0, maka
+        lakukan: variabel a ditambah dengan variabell A
+        6) Membuat perulangan dengan kondisi jika variabel b di modulus dengan variabel A tidak sama dengan 0, maka lakukan:
+        variabel b ditambah dengan variabel B
+        7) Membuat kondisi jika variabel a = variabel b maka lakukan: print hasil KPK dari variabel a dan b
+
+    - Pseucode:
+        a ← 3
+        b ← 4
+        A ← a
+        B ← b
+
+        While a mod B != 0:
+         a ← a + A
+        While b mod A != 0:
+         b ← b + B
+
+        If a == b then
+         print "Hasil KPK dari A dan B adalah a"
+         
+    - Code Program
+      a = 3 
+      b = 4 
+      A = a 
+      B = b 
+
+      while a % B != 0:
+          a += A
+
+      while b % A != 0:
+          b += B
+
+      if a == b:
+          print(f"hasil KPK dari {A} dan {B} adalah {a}") 
+
+====================================================================================
+
+2. Buatlah fungsi untuk menukar posisi dua variabel x dan y, dengan kasus:
+   Ada 2 buah manggis dan pisang, berikut kondisi:
+    - Manggis di piring 1
+    = Pisang di piring 2
+    - Piring 3 kosong
+
+    - Algoritma
+        1) Buat variabel x dengan value "manggis
+        2) Buat variabel y dengan value "pisang"
+        3) Buat variabel piring_3 yang akan menampung variabel x saat dipindahkan
+        4) Isi variabel piring_3 dengan nilai variabel x
+        5) Isi variabel x dengan nilai variabel y
+        6) Isi variabel y dengan nilai piring_3
+        7) Print nilai x dan y setelah penukaran posisi
+
+    - Pseucode
+        x ← "manggis"
+        y ← "pisang"
+        
+        print "Kondisi awal: \npiring 1 =", x, "\npiring 2 =", y
+        
+        piring_3 ← x
+        x ← y
+        y ← piring_3
+        
+        print "\nKondisi setelah menukar posisi: \npiring 1 =", x, "\npiring 2 =", y
+
+    - Code Program
+        #2_Menukar posisi dua variabel x dan y, dengan kasus :
+        #Ada 2 buah: manggis dan pisang. Manggis di piring 1, Pisang di piring 2. Piring 3 kosong.
+        x = "manggis"
+        y = "pisang"
+        print("Kondisi awal: \npiring 1 =", x, "\npiring 2 =", y)
+        piring_3 = x
+        x = y
+        y = piring_3
+        
+        print("\nKondisi setelah menukar posisi: \npiring 1 =", x, "\npiring 2 =", y)
+
+====================================================================================
+
+3. Diketahui sebuah segitiga memiliki ukuran sebagai berikut:
+    - Alas = 25
+    - Tinggi = 30
+    - Hitung luas dari segitiga tersebut.
+
+    - Algoritma
+        1) Buat variabel alas dengan nilai 25
+        2) Buat variabel tinggi dengan nilai 30
+        3) Buat variabel luas yang akan berisi nilai dari alas kali tinggi bagi 2
+        4) print nilai dari variabel luas
+
+    - Pseucode
+        alas ← 25
+        tinggi ← 30
+        luas ← alas * tinggi // 2
+        print "luas segitiganya adalah", luas
+
+    - Code Program
+        #3_Mencari luas segitiga dengan alas 25 dan tinggi 30
+        alas = 25
+        tinggi = 30
+        luas = alas * tinggi // 2
+        print("luas segitiganya adalah", luas)
+
+====================================================================================
+
+4. Tentukan algoritma dan pseudocode luas jajar genjang (panjang = 5, tinggi = 3) 
+
+    - Algoritma
+        1) Buat variabel alas dengan nilai 5
+        2) Buat variabel tinggi dengan nilai 3
+        3) Buat variabel luas dengan nilai dari hasil alas kali tinggi
+        4) Print hasil nilai luas
+
+    - Pseucode
+        alas ← 5
+        tinggi ← 3
+        luas ← alas * tinggi 
+        print "luas jajar genjangnya adalah", luas
+
+- Code Program
+        #4_Mencari luas jajar genjang dengan panjang 5 dan tinggi 3
+        alas = 5
+        tinggi = 3
+        luas = alas * tinggi
+        print("luas jajar genjangnya adalah", luas)
+
+====================================================================================
+
+ 5. Tentukan algoritma dan pseudocode volume tabung (jari-jari = 3, tinggi = 5)
+ 
+    - Algoritma
+        1) Buat variabel pi dengan nilai 3.14
+        2) Buat variabel r dengan nilai 10
+        3) Buat variabel tinggi dengan nilai 15
+        4) Buat variabel luas dengan nilai dari hasil pi dikalikan r kuadrat dikalikan tinggi
+        5) Print hasil nilai luas
+ 
+    - Pseucode
+        pi ← 3.14
+        r ← 10
+        tinggi ← 15
+        luas ← pi * r ** 2 * tinggi
+        print "volume tabungnya adalah", int(luas)
+ 
+    - Code Program
+        #5_Mencari volume tabung dengan jari-jari 3 dan tinggi 5
+        
+        pi = 3.14
+        r = 10
+        tinggi = 15
+        luas = pi * r ** 2 * tinggi
+        print("volume tabungnya adalah", int(luas))
+
+====================================================================================
+
+6. Tentukan algoritma dan pseudocode volume kerucut dengan diameter 5 dan tinggi 4
+    - Algoritma
+        1) Buat variabel pi dengan nilai 3.14
+        2) Buat variabel d dengan nilai 5
+        3) Buat variabel r dengan nilai variabel d dibagi dua
+        4) Buat variabel tinggi dengan nilai 4
+        5) Buat variabel luas dengan nilai dari hasil satu per tiga dikali pi dikali r kuadrat dikali tinggi
+        6) Print hasil nilai luas
+ 
+    - Pseucode
+        pi ← 3.14
+        d ← 5
+        r ← d/2
+        tinggi ← 4
+        luas ← 1/3 * pi * r ** 2 * tinggi
+        print "volume kerucutnyanya adalah", int(luas)
+ 
+     - Code Program
+        #6_Mencari volume kerucut dengan diameter 5 dan tinggi 4
+        
+        pi = 3.14
+        d = 5
+        r = d / 2
+        tinggi = 4
+        luas = 1 / 3 * pi * r ** 2 * tinggi
+        print("volume kerucutnyanya adalah", int(luas))
